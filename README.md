@@ -7,14 +7,14 @@ Implementation of GAN models for Image to Image translation using MXNet:
 
 ### Deep Convolution GAN with VGG16 source image encoder
 
-To run [DCGan](src/library/dcgan.py) using 
-the [facade dataset](http://cmp.felk.cvut.cz/~tylecr1/facade/) dataset, run the following command:
+To run DCGan using 
+the facade dataset, run the following command:
 
 ```bash
 python demo/dcgan_train.py
 ```
 
-The [demo/dcgan_train.py](demo/dcgan_train.py) sample codes are shown below:
+The demo/dcgan_train.py sample codes are shown below:
 
 ```
 def patch_path(path):
@@ -44,7 +44,7 @@ if __name__ == '__main__':
 ```
 
 
-The trained models will be saved into [demo/models](demo/models) folder with prefix "dcgan-*"
+The trained models will be saved into demo/models folder with prefix "dcgan-*"
 
 To run the trained models to generate new images:
 
@@ -52,7 +52,7 @@ To run the trained models to generate new images:
 python demo/dcgan_generate.py
 ```
 
-The [demo/dcgan_generate.py] sample codes are shown below:
+The demo/dcgan_generate.py sample codes are shown below:
 
 ```python
 def main():
